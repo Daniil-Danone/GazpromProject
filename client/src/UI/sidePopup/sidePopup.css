@@ -1,0 +1,29 @@
+.side-popup {
+  height: 100%;
+  width: 100%;
+  max-width: 360px;
+  position: fixed;
+  top: 83px;
+  right: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.side-popup.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.side-popup__content {
+  width: 100%;
+  height: calc(100% - 35px);
+  padding: 20px;
+  padding-top: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
